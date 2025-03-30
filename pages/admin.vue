@@ -104,12 +104,10 @@ const auth = useFirebaseAuth();
 const db = useFirestore();
 const user = useCurrentUser();
 const userRef = doc(db, 'users', user.value.uid);
-
 const loaded = ref(false);
 const storage = useLocalStorage('transactions', []);
 const domData = ref([]);
 const { finishLoading, isLoading, startLoading } = useLoading();
-
 const addRow = () => {
   const newRow = {
     id: Math.random().toString(32).slice(2),
