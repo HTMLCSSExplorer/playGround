@@ -1,0 +1,53 @@
+{
+  "user": {
+    "uid": "RxNS29B26ZPRQvTEjzWN0UYcsut2",
+    "email": "htmlcssexplorer@gmail.com",
+    "emailVerified": true,
+    "displayName": "htmlcss explorer",
+    "isAnonymous": false,
+    "photoURL": "https://lh3.googleusercontent.com/a/ACg8ocJTasAqiXXopnp7Uu9oPG-GGX_fvoSkAxRGBmV4NfSyONZKLQ=s96-c",
+    "providerData": [
+      {
+        "providerId": "google.com",
+        "uid": "111870390107148289316",
+        "displayName": "htmlcss explorer",
+        "email": "htmlcssexplorer@gmail.com",
+        "phoneNumber": null,
+        "photoURL": "https://lh3.googleusercontent.com/a/ACg8ocJTasAqiXXopnp7Uu9oPG-GGX_fvoSkAxRGBmV4NfSyONZKLQ=s96-c"
+      }
+    ],
+    "stsTokenManager": {
+      "refreshToken": "AMf-vByJvHdhlaNLLWna6ILoN9bLhQUq2tqDE36XcM5Oh9v7eth1yRNSshCM9MzuP4PXKwNClhGyz3C1FESFyNWI4OnLjQhhoNBpX91JqYDlEd88HkcbWbBgarw6jy8lVlKDvvN476CutC-78xwytcyDRSs2JoyD5gWaPHW8snIyjdb68mwPJjFAaA2Rbt28yTDTWuKynn3XMoIv3OzO3_UBIR8ZqS1WbJtt1wzL09V6fpukAxFL5culQcIyjBCNX7o-mRGx4YRdY1vzh221VSiHoVY7L9kTv4hnkKrejUuex7M16EeThRWeg_1X0VOvEq3zRbwahn-ps-BrN6k9iTNakF--_FRIyQGzQXFcyQ2RMqm5hwRQ1NB8Jgn92cc-3q3ssY981B--7tGLffQwuYb5T_KMzj_sROx2xH8lr3MQGXH0NWfRjpNyhBiL0HSD9DfxRvquXosv",
+      "accessToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjMwYjIyMWFiNjU2MTdiY2Y4N2VlMGY4NDYyZjc0ZTM2NTIyY2EyZTQiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiaHRtbGNzcyBleHBsb3JlciIsInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BQ2c4b2NKVGFzQXFpWFhvcG5wN1V1OW9QRy1HR1hfZnZvU2tBeFJHQm1WNE5mU3lPTlpLTFE9czk2LWMiLCJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vY2FydHJhZGUtZmVkMzMiLCJhdWQiOiJjYXJ0cmFkZS1mZWQzMyIsImF1dGhfdGltZSI6MTc0MzE4MjYyMiwidXNlcl9pZCI6IlJ4TlMyOUIyNlpQUlF2VEVqeldOMFVZY3N1dDIiLCJzdWIiOiJSeE5TMjlCMjZaUFJRdlRFanpXTjBVWWNzdXQyIiwiaWF0IjoxNzQzMTgyNjIzLCJleHAiOjE3NDMxODYyMjMsImVtYWlsIjoiaHRtbGNzc2V4cGxvcmVyQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7Imdvb2dsZS5jb20iOlsiMTExODcwMzkwMTA3MTQ4Mjg5MzE2Il0sImVtYWlsIjpbImh0bWxjc3NleHBsb3JlckBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJnb29nbGUuY29tIn19.4XTfJB11tcnSe0tWrPjEA2Iml1cmXNCZOGuKqjPlMr4Ts43i6r4k6dc2rXitejt0W_llLyGb8X6x-pXm_mZGUTFUZ3Bs3DZkIDRAbuB5wwOsZiCdsJuS_mxyMO50rtYtRZnZ8n0ILedJ9bmd05iGsjamCbkOiASh3AE6tC15gyequUo8lnoF-JQcdRD5_36vEV3FL2nqxkr_K4SGUO-kQiL6ObbHu6P6c9lUCfl7-2hTFnu-fHs32kj524sQE-5frvZmw7WYnT00g9mIJgViXHveXrsqhVmj6OS-dJjVppdI3H-NfJOGCdRxAnxCYOrFMcJD8gdCJRCfXcwvJ-RgSQ",
+      "expirationTime": 1743186225478
+    },
+    "createdAt": "1743182622098",
+    "lastLoginAt": "1743182622098",
+    "apiKey": "AIzaSyA_3j853ljlCXFxOzPq59esj1jMIwqqEno",
+    "appName": "[DEFAULT]"
+  },
+  "providerId": "google.com",
+  "_tokenResponse": {
+    "federatedId": "https://accounts.google.com/111870390107148289316",
+    "providerId": "google.com",
+    "email": "htmlcssexplorer@gmail.com",
+    "emailVerified": true,
+    "firstName": "htmlcss",
+    "fullName": "htmlcss explorer",
+    "lastName": "explorer",
+    "photoUrl": "https://lh3.googleusercontent.com/a/ACg8ocJTasAqiXXopnp7Uu9oPG-GGX_fvoSkAxRGBmV4NfSyONZKLQ=s96-c",
+    "localId": "RxNS29B26ZPRQvTEjzWN0UYcsut2",
+    "displayName": "htmlcss explorer",
+    "idToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjMwYjIyMWFiNjU2MTdiY2Y4N2VlMGY4NDYyZjc0ZTM2NTIyY2EyZTQiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiaHRtbGNzcyBleHBsb3JlciIsInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BQ2c4b2NKVGFzQXFpWFhvcG5wN1V1OW9QRy1HR1hfZnZvU2tBeFJHQm1WNE5mU3lPTlpLTFE9czk2LWMiLCJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vY2FydHJhZGUtZmVkMzMiLCJhdWQiOiJjYXJ0cmFkZS1mZWQzMyIsImF1dGhfdGltZSI6MTc0MzE4MjYyMiwidXNlcl9pZCI6IlJ4TlMyOUIyNlpQUlF2VEVqeldOMFVZY3N1dDIiLCJzdWIiOiJSeE5TMjlCMjZaUFJRdlRFanpXTjBVWWNzdXQyIiwiaWF0IjoxNzQzMTgyNjIyLCJleHAiOjE3NDMxODYyMjIsImVtYWlsIjoiaHRtbGNzc2V4cGxvcmVyQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7Imdvb2dsZS5jb20iOlsiMTExODcwMzkwMTA3MTQ4Mjg5MzE2Il0sImVtYWlsIjpbImh0bWxjc3NleHBsb3JlckBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJnb29nbGUuY29tIn19.hGFVgu0cB8yyVQW0uIsJ7oDxHgca2cQfCri_oan28Dj3NJwT3G7gsXu3WG5HOLIUvLVOwSFTs3rH5QJ0h9qT_voA2qa7TEKq8I1iZm-lfdDtIxnW92Bz3cmPI0SbcI5LwJrcOiCsak3nPB8aEQEYaC9NFkry07Usg_GgfvJXweuqBjPKTICQBp45E1kFlhzJVBpd-1A4xjk5CcBsk6L9Bqb0P1C39YitOD8nT_CbKbaAU1wLBYhH6oavJZnWDwcPPfJUZ-HT-Z8eT5NN6B3u2JpE35_vDKdurv1MJTs-nhIOQQeRZDLwXBhtyEVZPUTLFQDw0Z6tE3odUWLbuzdPaw",
+    "context": "",
+    "oauthAccessToken": "ya29.a0AeXRPp7KXRBLdafeq9pIHJhUXlcekldPdwK6nx744u2UWX-HWL2STTQFE0cIgp-wfDkRQmq9TnyrRXkXnHt4CYX7y4mMqsCjOkZjkc16loF9UT9yLaANagdLNaZhT-aZUqKtAyP9plMT0lsAYvLlF6mfubjB4L7f1jDAcmTDGeIaCgYKAccSARESFQHGX2MiUEDh7ikvuuY0XZPcEKVQZA0178",
+    "oauthExpireIn": 3599,
+    "refreshToken": "AMf-vByJvHdhlaNLLWna6ILoN9bLhQUq2tqDE36XcM5Oh9v7eth1yRNSshCM9MzuP4PXKwNClhGyz3C1FESFyNWI4OnLjQhhoNBpX91JqYDlEd88HkcbWbBgarw6jy8lVlKDvvN476CutC-78xwytcyDRSs2JoyD5gWaPHW8snIyjdb68mwPJjFAaA2Rbt28yTDTWuKynn3XMoIv3OzO3_UBIR8ZqS1WbJtt1wzL09V6fpukAxFL5culQcIyjBCNX7o-mRGx4YRdY1vzh221VSiHoVY7L9kTv4hnkKrejUuex7M16EeThRWeg_1X0VOvEq3zRbwahn-ps-BrN6k9iTNakF--_FRIyQGzQXFcyQ2RMqm5hwRQ1NB8Jgn92cc-3q3ssY981B--7tGLffQwuYb5T_KMzj_sROx2xH8lr3MQGXH0NWfRjpNyhBiL0HSD9DfxRvquXosv",
+    "expiresIn": "3600",
+    "oauthIdToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjgyMWYzYmM2NmYwNzUxZjc4NDA2MDY3OTliMWFkZjllOWZiNjBkZmIiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiMjY3NDc0NjQyOTg1LW5haWk1a3Vsa3RyczRlaHBpdmxraXIyNHVoMGM5a3ZjLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiMjY3NDc0NjQyOTg1LW5haWk1a3Vsa3RyczRlaHBpdmxraXIyNHVoMGM5a3ZjLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTExODcwMzkwMTA3MTQ4Mjg5MzE2IiwiZW1haWwiOiJodG1sY3NzZXhwbG9yZXJAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJXV0lnNURDTDI2RVNMUk4yU0FDeEdRIiwiaWF0IjoxNzQzMTgyNjIxLCJleHAiOjE3NDMxODYyMjF9.HrqzRbaJPMgAvgyDF92ut0eNZOI58lgt1sOoBDysWgNW-CMWLeYUI6Mg9zGpdSdm0h6YqQbmSwn6lTfULJ_U8VHYpdon__04XS2rIZeJCszxtsnTOf_52kGklDuWCxwH1yX8Wioq54KyxJ02CiGHfopbE6ROUXsJJrQp_w_U4h-liBayVZE1o6nyuke8l30OhFmv9CO1WkmBLmE8OXDi8FaVvPJh5-IuPFmnE5PpBH1S1JvxnHZziHB6-1W__dE3umSQABKq6rDp7x08BbdwSznShfYVshqcz4oSs6SI0U-7wEIfE--9c-aj9PGoQMxIbuvwa3LOjjsR3tjB9qUwfQ",
+    "rawUserInfo": "{\"name\":\"htmlcss explorer\",\"granted_scopes\":\"https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email openid\",\"id\":\"111870390107148289316\",\"verified_email\":true,\"given_name\":\"htmlcss\",\"family_name\":\"explorer\",\"email\":\"htmlcssexplorer@gmail.com\",\"picture\":\"https://lh3.googleusercontent.com/a/ACg8ocJTasAqiXXopnp7Uu9oPG-GGX_fvoSkAxRGBmV4NfSyONZKLQ=s96-c\"}",
+    "isNewUser": true,
+    "kind": "identitytoolkit#VerifyAssertionResponse"
+  },
+  "operationType": "signIn"
+}
