@@ -129,7 +129,6 @@ const removeRow = (id) => {
 watch(
   domData,
   (newData) => {
-    if (!newData) return;
     newData.forEach((item) => {
       item.buyCost = item.grams * item.buyPrice;
     });
@@ -139,8 +138,6 @@ watch(
 watch(
   domData,
   (newData) => {
-    if (!newData) return;
-
     newData.forEach((item) => {
       item.lostProfit =
         item.grams * item.CurrentPrice - item.grams * item.buyPrice;
@@ -158,10 +155,12 @@ onMounted(async () => {
       storage.value = docSnap.data().transactions;
       console.log('✅ Firestore data synced to local storage');
     }
-  }
+  }else{
 
-  domData.value = storage.value;
-  storage.value.length > 0 ? (loaded.value = true) : '';
+    
+    // domData.value = storage.value;
+    // storage.value.length > 0 ? (loaded.value = true) : '';
+  }
 });
 
 const totalValues = computed(() => {
