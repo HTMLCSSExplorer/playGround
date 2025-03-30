@@ -184,7 +184,6 @@ const totalValues = computed(() => {
 });
 
 const handleSignOut = async () => {
-  console.log('user', user);
   const userRef = doc(db, 'users', user.value.uid);
   const localStorageData = storage.value || [];
 
