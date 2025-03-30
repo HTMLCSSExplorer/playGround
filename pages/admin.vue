@@ -125,18 +125,21 @@ const removeRow = (id) => {
   storage.value = domData.value;
   storage.value.length === 0 ? (loaded.value = false) : '';
 };
-const rowBuyCost = watch(
+watch(
   domData,
   (newData) => {
+    if (!newData) return;
     newData.forEach((item) => {
       item.buyCost = item.grams * item.buyPrice;
     });
   },
   { deep: true } // Ensure reactivity for nested objects
 );
-const rowLostProfit = watch(
+watch(
   domData,
   (newData) => {
+    if (!newData) return;
+
     newData.forEach((item) => {
       item.lostProfit =
         item.grams * item.CurrentPrice - item.grams * item.buyPrice;
@@ -147,12 +150,12 @@ const rowLostProfit = watch(
 
 onMounted(async () => {
   if (user) {
-    const userRef = doc(db, "users", user.value.uid);
+    const userRef = doc(db, 'users', user.value.uid);
     const docSnap = await getDoc(userRef);
 
     if (docSnap.exists()) {
-      storage.value = (docSnap.data().transactions)
-      console.log("✅ Firestore data synced to local storage");
+      storage.value = docSnap.data().transactions;
+      console.log('✅ Firestore data synced to local storage');
     }
   }
 
@@ -183,7 +186,7 @@ const totalValues = computed(() => {
 const handleSignOut = async () => {
   console.log('user', user);
   const userRef = doc(db, 'users', user.value.uid);
-  const localStorageData = (storage.value) || [];
+  const localStorageData = storage.value || [];
 
   if (userRef) {
     try {
