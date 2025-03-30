@@ -50,6 +50,7 @@
               </span>
             </li>
             <UButton
+              :disabled="isLoading"
               type="button"
               label="add row"
               class="uppercase mb-5 font-bold"
@@ -102,12 +103,13 @@ import { signOut } from 'firebase/auth';
 const auth = useFirebaseAuth();
 const db = useFirestore();
 const user = useCurrentUser();
-
 const userRef = doc(db, 'users', user.value.uid);
 
 const loaded = ref(false);
 const storage = useLocalStorage('transactions', []);
 const domData = ref([]);
+const { finishLoading, isLoading, startLoading } = useLoading();
+
 const addRow = () => {
   const newRow = {
     id: Math.random().toString(32).slice(2),
@@ -121,7 +123,7 @@ const addRow = () => {
   storage.value = domData.value;
   loaded.value = true;
 };
-const removeRow =async (id) => {
+const removeRow = async (id) => {
   domData.value = domData.value.filter((row) => {
     return row.id !== id;
   });
@@ -129,15 +131,13 @@ const removeRow =async (id) => {
   storage.value.length === 0 ? (loaded.value = false) : '';
   const localStorageData = storage.value || [];
   try {
-      await updateDoc(userRef, {
-        transactions: localStorageData,
-      });
-      console.log('✅ Local storage data saved to Firestore!');
-    } catch (error) {
-      console.error('❌ Error saving to Firestore:', error);
-    }
-
-
+    await updateDoc(userRef, {
+      transactions: localStorageData,
+    });
+    console.log('✅ Local storage data saved to Firestore!');
+  } catch (error) {
+    console.error('❌ Error saving to Firestore:', error);
+  }
 };
 watch(
   domData,
@@ -160,6 +160,7 @@ watch(
 );
 
 onMounted(async () => {
+  startLoading();
   if (user) {
     const userRef = doc(db, 'users', user.value.uid);
     const docSnap = await getDoc(userRef);
@@ -169,11 +170,10 @@ onMounted(async () => {
       console.log('✅ Firestore data synced to local storage');
       domData.value = storage.value;
     }
-  }else{
-
-    
+  } else {
     // storage.value.length > 0 ? (loaded.value = true) : '';
   }
+  finishLoading();
 });
 
 const totalValues = computed(() => {
