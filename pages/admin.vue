@@ -101,8 +101,11 @@ import { doc, updateDoc, getDoc } from 'firebase/firestore';
 import { signOut } from 'firebase/auth';
 const auth = useFirebaseAuth();
 const db = useFirestore();
-const loaded = ref(false);
 const user = useCurrentUser();
+
+const userRef = doc(db, 'users', user.value.uid);
+
+const loaded = ref(false);
 const storage = useLocalStorage('transactions', []);
 const domData = ref([]);
 const addRow = () => {
@@ -118,12 +121,23 @@ const addRow = () => {
   storage.value = domData.value;
   loaded.value = true;
 };
-const removeRow = (id) => {
+const removeRow =async (id) => {
   domData.value = domData.value.filter((row) => {
     return row.id !== id;
   });
   storage.value = domData.value;
   storage.value.length === 0 ? (loaded.value = false) : '';
+  const localStorageData = storage.value || [];
+  try {
+      await updateDoc(userRef, {
+        transactions: localStorageData,
+      });
+      console.log('✅ Local storage data saved to Firestore!');
+    } catch (error) {
+      console.error('❌ Error saving to Firestore:', error);
+    }
+
+
 };
 watch(
   domData,
@@ -153,11 +167,11 @@ onMounted(async () => {
     if (docSnap.exists()) {
       storage.value = docSnap.data().transactions;
       console.log('✅ Firestore data synced to local storage');
+      domData.value = storage.value;
     }
   }else{
 
     
-    // domData.value = storage.value;
     // storage.value.length > 0 ? (loaded.value = true) : '';
   }
 });
@@ -183,7 +197,6 @@ const totalValues = computed(() => {
 });
 
 const handleSignOut = async () => {
-  const userRef = doc(db, 'users', user.value.uid);
   const localStorageData = storage.value || [];
 
   if (userRef) {

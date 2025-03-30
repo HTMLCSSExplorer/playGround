@@ -6,8 +6,8 @@
         :schema="signInSchema"
         class="mx-auto flex w-full max-w-lg flex-col rounded-xl border p-4 sm:p-20"
         @submit="onSubmit"
-        :disabled="state.isLoading"
-        :class="state.isLoading ? 'opacity-40' : ''"
+        :disabled="isLoading"
+        :class="isLoading ? 'opacity-40' : ''"
       >
         <div class="flex w-full flex-col gap-2">
           <p class="text-center">Sign in with</p>
@@ -16,9 +16,9 @@
               type="button"
               class="flex justify-center gap-2"
               icon="logos-google-icon"
-              :disabled="state.isLoading"
+              :disabled="isLoading"
               loading-icon="logos-google-icon"
-              :loading="state.isLoading"
+               :loading="isLoading"
               @click="signinWithGoogleAccount"
             >
               <span>Sign in with google</span>
@@ -37,6 +37,7 @@
               type="email"
               class="input max-w-full"
               v-model="state.email"
+               :loading="isLoading"
             />
           </UFormField>
           <UFormField label="Password" class="form-field" name="password">
@@ -45,6 +46,7 @@
               type="password"
               class="input max-w-full"
               v-model="state.password"
+               :loading="isLoading"
             />
           </UFormField>
           <UFormField class="form-field">
@@ -63,6 +65,7 @@
               <UButton
                 type="submit"
                 class="w-full text-center flex justify-center"
+                 :loading="isLoading"
               >
                 Sign in
               </UButton>
