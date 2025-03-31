@@ -166,10 +166,10 @@ onMounted(async () => {
     if (docSnap.exists()) {
       storage.value = docSnap.data().transactions;
       console.log('✅ Firestore data synced to local storage');
+
       domData.value = storage.value;
+      storage.value.length > 0 ? (loaded.value = true) : '';
     }
-  } else {
-    // storage.value.length > 0 ? (loaded.value = true) : '';
   }
   finishLoading();
 });
